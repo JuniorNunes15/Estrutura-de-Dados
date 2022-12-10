@@ -1,0 +1,17 @@
+[sorting] Criando um insertionsort para listas
+
+Descrição
+Semelhante à questão anterior, nesta você deve implementar uma versão do algoritmo insertionSort para listas. 
+
+Sua tarefa nesta atividade é implementar uma versão do insertionSort para uma lista duplamente encadeada circular com nó sentinela.
+
+A lista desta atividade é uma lista de inteiros, ela já foi implementada e já é dada na questão. 
+
+A única coisa que precisa ser feita é a implementação da função que tem o seguinte protótipo: 
+
+void insertionsort()
+Para implementar esta função, você deve satisfazer as seguintes restrições:
+1 - Não é permitido usar vetores ou outras estruturas de dados auxiliares. Inclusive, não é permitido instanciar nós adicionais.
+Você pode declarar variáveis ponteiro auxiliares para te ajudar (um número constante delas).
+2 - Seu algoritmo deve ter complexidade de pior caso O(n^2), assim como a versão original dele para vetores.
+3 - Não é permitido usar funções auxiliares.
