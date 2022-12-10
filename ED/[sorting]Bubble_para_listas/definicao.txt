@@ -1,0 +1,26 @@
+[sorting] Criando um bubble para listas
+
+Descrição
+Em sala, nós estudamos o algoritmo bubblesort, que é um algoritmo com complexidade de pior caso O(n2).
+
+Estudamos uma versão do bubblesort para vetores.
+
+Porém, este mesmo algoritmo também pode ser utilizado para ordenar listas duplamente encadeadas, mantendo a 
+
+mesma complexidade de pior caso O(n^2).
+
+Sua tarefa nesta atividade é implementar uma versão do bubblesort para uma lista duplamente encadeada circular com nó sentinela.
+
+A lista desta atividade é uma lista de inteiros (int), ela já foi implementada e já é dada na questão. 
+
+A única coisa que precisa ser feita é a implementação da função bubblesort que tem o seguinte protótipo: 
+
+void bubblesort()
+Para implementar esta função, você deve satisfazer as seguintes restrições:
+1 - Não é permitido usar vetores ou outras estruturas de dados auxiliares. Inclusive, não é permitido instanciar nós adicionais.
+Você pode declarar variáveis ponteiro auxiliares para te ajudar (um número constante delas).
+2 - Seu algoritmo deve ter complexidade de pior caso O(n^2), assim como a versão original dele para vetores.
+3 - Não é permitido usar funções auxiliares. Dá para fazer tudo dentro da função bubblesort.
+O objetivo aqui é pegar o algoritmo bubblesort que vimos em sala e implementar uma versão equivalente dele para listas.
+Não é obrigatório usar dois laços for. Se você quiser usar laço while ou do-while, você pode usar.
+
