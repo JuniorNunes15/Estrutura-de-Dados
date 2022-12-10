@@ -1,0 +1,111 @@
+[BinTree] Calculando a altura e o número de nós de uma árvore binária
+
+Descrição 
+Durante as aulas, estudamos a estrutura de dados árvore binária generalizada (uma árvore em que as chaves dos nós não tem nenhuma relação de ordem entre si) e
+
+vimos a implementação das funções mais básicas que podem ser realizadas nesta estrutura de dados.
+
+As árvores binárias podem ser representadas como uma string por meio da serialização dos valores de suas chaves.
+
+A serialização é um processo pelo qual percorremos a árvore em pré-ordem e adicionamos o valor de cada chave encontrada ao
+
+final de uma string que inicialmente começa vazia, sendo que, para cada filho nulo encontrado, seu valor é representado pelo caractere '#'.
+
+Por exemplo, logo abaixo mostramos o desenho de uma árvore e depois a string obtida pela serialização de suas chaves:
+
+A serialização da árvore acima consiste na string: 
+
+8 3 1 # # 6 4 # # 7 # # 10 # 14 13 # # #
+
+Para entender melhor o conceito de serialização de uma árvore binária e ver outros exemplos
+
+de árvores e sua serialização, você pode acessar esse link: https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/
+
+Nesta atividade, a árvore é construída através de uma string de serialização.
+
+Isso já está codificado. Você não precisa implementar.
+
+Atividade
+Para esta atividade, é pedido que você incremente a implementação desta estrutura, implementando as seguintes funções adicionais: 
+
+1. Escreva uma função que calcule a altura uma árvore binária.
+
+A sua função deve ser recursiva e deve ter o seguinte protótipo:
+
+int _height(Node *node);
+2. Escreva uma função que calcule o número de nós de uma árvore binária.
+
+A sua função deve ser recursiva e deve ter o seguinte protótipo:
+
+int _size(Node *node);
+Observação: Suas funções privadas devem ser recursivas e não é permitido usar variáveis globais nestas atividades.
+
+Exercícios resolvidos com variáveis globais receberão nota ZERO.
+
+Ajuda
+A atividade já vem com um código implementado para você seguir como ponto de partida.
+
+O método bshow da árvore imprime a árvore em um formato amigável. Você pode utilizá-lo para conferir se seu código está funcionando corretamente.
+
+Para o caso da árvore abaixo, temos essa saída.
+
+//serial
+1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # #
+
+//bshow()
+
+
+ 
+Para simplificar o código, estou utilizando a convenção _ para expressar quais são os métodos privados.
+
+Os locais onde você deve colocar seu código estão marcados com //TODO. Como estamos lidando com árvores,
+
+você deverá criar também os métodos recursivos privados e os métodos públicos.
+
+Testes
+>>>>>>>> um
+4 # # 
+========
+1 1
+<<<<<<<<
+
+>>>>>>>> dois
+1 # 0 # # 
+========
+2 2
+<<<<<<<<
+
+>>>>>>>> tres
+4 # 8 2 # # 3 # # 
+========
+3 4
+<<<<<<<<
+
+>>>>>>>> quatro
+0 9 4 # # # 5 # # 
+========
+3 4
+<<<<<<<<
+
+>>>>>>>> cinco
+0 4 # # 2 0 # # 3 # # 
+========
+3 5
+<<<<<<<<
+
+>>>>>>>> seis
+2 0 0 # # # 3 # 7 # 9 # # 
+========
+4 6
+<<<<<<<<
+
+>>>>>>>> dez
+1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # # 
+========
+5 10
+<<<<<<<<
+>>>>>>>> zero
+# # 
+========
+0 0
+<<<<<<<<
